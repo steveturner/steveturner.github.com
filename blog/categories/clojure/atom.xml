@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: clojure | Beauhinks.com]]></title>
+  <link href="http://beauhinks.com/blog/categories/clojure/atom.xml" rel="self"/>
+  <link href="http://beauhinks.com/"/>
+  <updated>2013-03-09T12:51:54-07:00</updated>
+  <id>http://beauhinks.com/</id>
+  <author>
+    <name><![CDATA[Steven Turner]]></name>
+    <email><![CDATA[whathasnotbeenuse@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Playing with Overtone and Dubstep]]></title>
+    <link href="http://beauhinks.com/blog/2013/03/09/playing-with-overtone-and-dubstep/"/>
+    <updated>2013-03-09T12:32:00-07:00</updated>
+    <id>http://beauhinks.com/blog/2013/03/09/playing-with-overtone-and-dubstep</id>
+    <content type="html"><![CDATA[<p>Playing with Overtone in LightTable...</p>
+
+<p><video width='320' height='160' preload='none' controls poster='http://beauhinks.com.s3.amazonaws.com/images/overtone.mp4-3.png'><source src='http://beauhinks.com.s3.amazonaws.com/video/overtone_dubstep.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Simple URL Shortener with Clojure]]></title>
+    <link href="http://beauhinks.com/blog/2013/03/09/simple-url-shortener-with-clojure/"/>
+    <updated>2013-03-09T12:25:00-07:00</updated>
+    <id>http://beauhinks.com/blog/2013/03/09/simple-url-shortener-with-clojure</id>
+    <content type="html"><![CDATA[<p>Tinkering more with Clojure and web services.</p>
+
+<p>Here’s the entire application code:</p>
+
+<p>``` clojure
+(ns startingclojure.app
+  (:use [clojure.pprint] [compojure.core] )
+  (:require</p>
+
+<pre><code>[ring.adapter.jetty :as jetty]
+[ring.util.response :as response]
+))
+</code></pre>
+
+<p>(defonce counter (atom 999))
+(defonce urls (atom {}))
+(defn shorten
+  [url]
+  (let [id (swap! counter inc)</p>
+
+<pre><code>    id (Long/toString id 36)]
+(swap! urls assoc id url)
+id))
+</code></pre>
+
+<p>(defn homepage
+  [request]
+  (str @urls))</p>
+
+<p>(defn redirect
+  [id]
+  (response/redirect (@urls id)))</p>
+
+<p>(defroutes app
+  (GET "/" request (homepage request))
+  (GET "/:id" [id] (redirect id)))
+```</p>
+
+<p>Fire up the app with
+<code>clojure
+(def server (jetty/run-jetty #’app {:port 8080 :join? false}))
+</code>
+And add some urls:
+``` clojure
+(shorten “http://woot.com”)</p>
+
+<p>(shorten “http://logz.beauhinks.com”)
+```
+Navigate to http://localhost:8080</p>
+
+<p>Try some of the keys…</p>
+
+<p>Fairly incredible how little code there is to perform a redirect and handle routes. Thanks to this video.</p>
+]]></content>
+  </entry>
+  
+</feed>
