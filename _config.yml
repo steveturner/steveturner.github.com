@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: whathasnotbeenuse@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -59,7 +59,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 
 # Github repositories
 github_user: steveturner
-github_repo_count: 4
+github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
