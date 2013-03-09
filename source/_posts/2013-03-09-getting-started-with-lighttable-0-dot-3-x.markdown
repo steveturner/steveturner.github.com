@@ -13,4 +13,4 @@ I spend a lot of time in Eclipse and [Vim](http://vim.spf13.com/)  on a daily ba
 To get started with LightTable download the version for your platform at: [http://www.lighttable.com/] For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.
 
 Once installed, launch LightTable and as of version 0.3.x you should be greeted with the following:
-{% img left /images/posts/LightTable-3.png 'image' 'images' %}
+![sample](/images/posts/LightTable-3.png)
