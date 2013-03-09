@@ -4,7 +4,7 @@
   <title><![CDATA[Category: clojure | Beauhinks.com]]></title>
   <link href="http://beauhinks.com/blog/categories/clojure/atom.xml" rel="self"/>
   <link href="http://beauhinks.com/"/>
-  <updated>2013-03-09T12:51:54-07:00</updated>
+  <updated>2013-03-09T12:55:29-07:00</updated>
   <id>http://beauhinks.com/</id>
   <author>
     <name><![CDATA[Steven Turner]]></name>
@@ -66,6 +66,9 @@ id))
   (GET "/" request (homepage request))
   (GET "/:id" [id] (redirect id)))
 ```</p>
+
+<!-- more -->
+
 
 <p>Fire up the app with
 <code>clojure

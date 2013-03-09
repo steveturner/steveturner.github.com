@@ -344,31 +344,12 @@ posted in
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Fire up the app with</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="k">def </span><span class="nv">server</span> <span class="p">(</span><span class="nf">jetty/run-jetty</span> <span class="o">#</span><span class="err">’</span><span class="nv">app</span> <span class="p">{</span><span class="ss">:port</span> <span class="mi">8080</span> <span class="ss">:join?</span> <span class="nv">false</span><span class="p">}))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And add some urls:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="nf">shorten</span> <span class="err">“</span><span class="nv">http</span><span class="ss">://woot.com</span><span class="err">”</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">(</span><span class="nf">shorten</span> <span class="err">“</span><span class="nv">http</span><span class="ss">://logz.beauhinks.com</span><span class="err">”</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Navigate to http://localhost:8080</p>
-
-<p>Try some of the keys…</p>
-
-<p>Fairly incredible how little code there is to perform a redirect and handle routes. Thanks to this video.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/09/simple-url-shortener-with-clojure/">Read on &rarr;</a>
+    </footer>
   
 
 

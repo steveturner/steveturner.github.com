@@ -4,7 +4,7 @@
   <title><![CDATA[Beauhinks.com]]></title>
   <link href="http://beauhinks.com/atom.xml" rel="self"/>
   <link href="http://beauhinks.com/"/>
-  <updated>2013-03-09T12:51:54-07:00</updated>
+  <updated>2013-03-09T12:55:29-07:00</updated>
   <id>http://beauhinks.com/</id>
   <author>
     <name><![CDATA[Steven Turner]]></name>
@@ -101,6 +101,9 @@ http://beauhinks.tumblr.com/</p>
 </span><span class='line'>  <span class="p">(</span><span class="nf">GET</span> <span class="s">&quot;/&quot;</span> <span class="nv">request</span> <span class="p">(</span><span class="nf">homepage</span> <span class="nv">request</span><span class="p">))</span>
 </span><span class='line'>  <span class="p">(</span><span class="nf">GET</span> <span class="s">&quot;/:id&quot;</span> <span class="p">[</span><span class="nv">id</span><span class="p">]</span> <span class="p">(</span><span class="nf">redirect</span> <span class="nv">id</span><span class="p">)))</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
 
 
 <p>Fire up the app with</p>
