@@ -4,7 +4,7 @@
   <title><![CDATA[Beauhinks.com]]></title>
   <link href="http://beauhinks.com/atom.xml" rel="self"/>
   <link href="http://beauhinks.com/"/>
-  <updated>2013-03-10T23:07:01-06:00</updated>
+  <updated>2013-03-10T23:14:16-06:00</updated>
   <id>http://beauhinks.com/</id>
   <author>
     <name><![CDATA[Steven Turner]]></name>
@@ -18,23 +18,27 @@
     <link href="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/"/>
     <updated>2013-03-09T13:17:00-07:00</updated>
     <id>http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x</id>
-    <content type="html"><![CDATA[<p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a> I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
+    <content type="html"><![CDATA[<p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a>. I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
 
 <!-- more -->
 
 
 <p>Chris Granger gives an excellent summary of the features and how to exercise them in the latest release <a href="http://www.chris-granger.com/2013/02/27/light-table-030-experience/">here</a>.</p>
 
-<p>To get started with LightTable download the version for your platform at: [http://www.lighttable.com/] For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.</p>
+<p>To get started with LightTable download the version for your platform at: <a href="http://www.lighttable.com/">LightTable.com</a>. For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.</p>
 
 <p>Once installed, launch LightTable and as of version 0.3.x you should be greeted with the following:
 <img src="http://beauhinks.com/images/posts/LightTable-3.png" alt="sample" /></p>
 
-<p>On the left you&#8217;ll see some navigation bars. I&#8217;ll go over those briefly.
-- Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click &#8220;add folder&#8221; to add an existing Clojure project.
-- Navigate: A fuzzy finder for looking through your workspace files.
-- Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.
-- Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.</p>
+<p>On the left you&#8217;ll see some navigation bars. I&#8217;ll go over those briefly.</p>
+
+<ul>
+<li>Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click &#8220;add folder&#8221; to add an existing Clojure project.</li>
+<li>Navigate: A fuzzy finder for looking through your workspace files.</li>
+<li>Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.</li>
+<li>Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.</li>
+</ul>
+
 
 <p>Basics covered&#8230; lets code! We&#8217;ll get started with Clojure Koans &#8211; small programming puzzles that are a great way to pick up the language.</p>
 
