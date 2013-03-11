@@ -8,4 +8,4 @@ categories: blog
 
 Migrating from Tumblr to Octopress. Might be a few issues here and there on the site as I migrate.
 For archives visit:
-http://beauhinks.tumblr.com/
+[Tumblr](http://beauhinks.tumblr.com/)
