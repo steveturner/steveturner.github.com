@@ -6,21 +6,22 @@ comments: true
 categories: clojure
 ---
 
-I spend a lot of time in Eclipse and [Vim](http://vim.spf13.com/)  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign... [LightTable](http://www.lighttable.com/) I'm also new to Clojure so I've dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.
+I spend a lot of time in Eclipse and [Vim](http://vim.spf13.com/)  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign... [LightTable](http://www.lighttable.com/). I'm also new to Clojure so I've dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.
 
 <!-- more -->
 Chris Granger gives an excellent summary of the features and how to exercise them in the latest release [here](http://www.chris-granger.com/2013/02/27/light-table-030-experience/).
 
-To get started with LightTable download the version for your platform at: [http://www.lighttable.com/] For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.
+To get started with LightTable download the version for your platform at: [LightTable.com](http://www.lighttable.com/). For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.
 
 Once installed, launch LightTable and as of version 0.3.x you should be greeted with the following:
 ![sample](/images/posts/LightTable-3.png)
 
 On the left you'll see some navigation bars. I'll go over those briefly.
-- Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click "add folder" to add an existing Clojure project.
-- Navigate: A fuzzy finder for looking through your workspace files.
-- Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.
-- Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.
+  
+  * Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click "add folder" to add an existing Clojure project.
+  * Navigate: A fuzzy finder for looking through your workspace files.
+  * Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.
+  * Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.
 
 Basics covered... lets code! We'll get started with Clojure Koans -- small programming puzzles that are a great way to pick up the language.
 
