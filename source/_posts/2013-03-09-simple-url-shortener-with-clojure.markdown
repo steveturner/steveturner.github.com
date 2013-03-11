@@ -56,4 +56,4 @@ Navigate to http://localhost:8080
 
 Try some of the keys…
 
-Fairly incredible how little code there is to perform a redirect and handle routes. Thanks to this video.
+Fairly incredible how little code there is to perform a redirect and handle routes. [Thanks to this video!](http://www.youtube.com/watch?feature=player_embedded&v=VVd4ow-ZcX0#!)
