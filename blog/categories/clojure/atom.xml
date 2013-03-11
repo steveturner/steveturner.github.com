@@ -4,7 +4,7 @@
   <title><![CDATA[Category: clojure | Beauhinks.com]]></title>
   <link href="http://beauhinks.com/blog/categories/clojure/atom.xml" rel="self"/>
   <link href="http://beauhinks.com/"/>
-  <updated>2013-03-09T12:55:29-07:00</updated>
+  <updated>2013-03-10T23:07:01-06:00</updated>
   <id>http://beauhinks.com/</id>
   <author>
     <name><![CDATA[Steven Turner]]></name>
@@ -14,11 +14,118 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Getting Started with LightTable 0.3.x]]></title>
+    <link href="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/"/>
+    <updated>2013-03-09T13:17:00-07:00</updated>
+    <id>http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x</id>
+    <content type="html"><![CDATA[<p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign... <a href="http://www.lighttable.com/">LightTable</a> I'm also new to Clojure so I've dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
+
+<!-- more -->
+
+
+<p>Chris Granger gives an excellent summary of the features and how to exercise them in the latest release <a href="http://www.chris-granger.com/2013/02/27/light-table-030-experience/">here</a>.</p>
+
+<p>To get started with LightTable download the version for your platform at: [http://www.lighttable.com/] For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.</p>
+
+<p>Once installed, launch LightTable and as of version 0.3.x you should be greeted with the following:
+<img src="/images/posts/LightTable-3.png" alt="sample" /></p>
+
+<p>On the left you'll see some navigation bars. I'll go over those briefly.
+- Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click "add folder" to add an existing Clojure project.
+- Navigate: A fuzzy finder for looking through your workspace files.
+- Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.
+- Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.</p>
+
+<p>Basics covered... lets code! We'll get started with Clojure Koans -- small programming puzzles that are a great way to pick up the language.</p>
+
+<p>I'm going to assume you have Java installed. If you don't and are running Windows see: <a href="http://www.java.com/en/download/help/windows_manual_download.xml">Installation Instructions</a></p>
+
+<h2>Leiningen</h2>
+
+<ol>
+<li>Download <a href="https://raw.github.com/technomancy/leiningen/stable/bin/lein">Leiningen</a></li>
+<li>Put the downloaded script somewhere on your path. ~/bin is suggested by the documentation.</li>
+<li>Make it executable with
+<code>
+chmod 755 ~/bin/lein
+</code></li>
+</ol>
+
+
+<p>If you need more help installing visit the <a href="http://leiningen.org/#install">Leiningen docs</a> and more specifically if you're running Windows refer to those instructions. Leiningen relies on wget (a command line downloader). You can get wget from <a href="https://github.com/bmatzelle/gow/wiki">GOW</a></p>
+
+<h2>Clojure Koans</h2>
+
+<p>Get the puzzles either with Git via:
+<code>
+git clone git://github.com/functional-koans/clojure-koans.git
+</code>
+Or prior to Github shutting down the downloads feature this month <a href="https://github.com/functional-koans/clojure-koans/downloads">here</a>.</p>
+
+<p>Navigate to the directory and hopefully if everything above went swimmingly you should be able to execute:
+<code>
+lein deps
+lein koan run
+</code></p>
+
+<p>If all went well, you should see:
+```
+➜  clojure-koans git:(master) ✗ lein koan run
+Starting auto-runner...
+Considering /Users/steve/Code/git/clojure-koans/src/koans/01_equalities.clj...</p>
+
+<h2>Now meditate upon /Users/steve/Code/git/clojure-koans/src/koans/01_equalities.clj:3</h2>
+
+<p>Assertion failed!
+We shall contemplate truth by testing reality, via equality
+(= __ true)
+```</p>
+
+<p>The Clojure Koan puzzle is telling you what file you need to edit to proceed to the next text in the output.</p>
+
+<h2>LightTable</h2>
+
+<p>Switch back to LightTable and click the "Workspace" tab and "Add Folder"</p>
+
+<p><img src="/images/posts/Screenshot_3_10_13_10_38_PM.png" alt="workspace" /></p>
+
+<p>Navigate to the directory you checked out the "clojure-koans" repository to on your local machine.</p>
+
+<p><img src="/images/posts/Screenshot_3_10_13_10_39_PM-2.png" alt="project" /></p>
+
+<p>I like to snap LightTable and iTerm to the left and right of my display while working through the puzzles. In OSX you can do this with <a href="https://github.com/fikovnik/ShiftIt">Shiftit</a>.</p>
+
+<p><img src="/images/posts/Fullscreen_3_10_13_10_43_PM-2.png" alt="snapped" /></p>
+
+<p>This way I can work through each step in the puzzle and see that the test passed successfully on the console at the right side of my display.</p>
+
+<p>Start trying to solve the puzzles! If you really get stuck, the LightTable "Instarepl" is invaluable. To launch it, select the "Command" tab and start typing "inst" in the search bar. Select "Open a clojure instarepl" to launch a new tab with a running REPL.</p>
+
+<p><img src="/images/posts/LightTable-2.png" alt="repl-launch" /></p>
+
+<p>You can then use the new Instarepl tab to help reason out your answers and see the results immediately. For example, the first few puzzles...
+<img src="/images/posts/Screenshot_3_10_13_10_58_PM.png" alt="repl-error" />
+Take note that I'm in the Instarepl tab. You can also toggle "live" evaluation by selecting the "live" button in the top right corner.
+Finally, as you type the puzzles in to reason about them, you'll see results immediately. In the above screenshot, I have not solved the puzzle yet, hence the error! As soon as I satisfy the expression...
+<img src="/images/posts/Screenshot_3_10_13_11_02_PM.png" alt="repl-success" />
+Success! But wait, my "koan" terminal on the right of display hasn't passed yet. I can then copy my solution from the Instarepl, insert it into the koan file and save to pass the koan! At first this may not seem useful, but as you progress through the more advanced koans, the REPL will greatly help you figure out Clojure forms and how to solve the problems.
+Happy REPL'ing.</p>
+
+<h2>Questions?</h2>
+
+<p>Feel free to post questions in the comments and I'll try to answer them. By far this is not a complete guide to getting running. Hopefully it consolidates a lot of resources around the web on Clojure and Light Table to get you started.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Playing with Overtone and Dubstep]]></title>
     <link href="http://beauhinks.com/blog/2013/03/09/playing-with-overtone-and-dubstep/"/>
     <updated>2013-03-09T12:32:00-07:00</updated>
     <id>http://beauhinks.com/blog/2013/03/09/playing-with-overtone-and-dubstep</id>
-    <content type="html"><![CDATA[<p>Playing with Overtone in LightTable...</p>
+    <content type="html"><![CDATA[<p>Playing with Overtone in LightTable... see the video after the break...</p>
+
+<!-- more -->
+
 
 <p><video width='320' height='160' preload='none' controls poster='http://beauhinks.com.s3.amazonaws.com/images/overtone.mp4-3.png'><source src='http://beauhinks.com.s3.amazonaws.com/video/overtone_dubstep.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 ]]></content>

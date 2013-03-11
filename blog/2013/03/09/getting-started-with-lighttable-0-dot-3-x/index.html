@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Getting Started with LightTable 0.3.x - Beauhinks.com</title>
+  <meta name="author" content="Steven Turner">
+  <link rel="author" href="humans.txt">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  
+    
+  
+  <meta name="description" content="I spend a lot of time in Eclipse and Vim on a daily basis. But, I also like to try new editors, one of which I have been following since they &hellip;">
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Beauhinks.com" type="application/atom+xml">
+  <meta name="og:type" content="website" />
+  <meta name="og:site_name" content="Beauhinks.com" />
+  <meta name="og:title" content="Getting Started with LightTable 0.3.x" />
+  <meta name="og:description" content="I spend a lot of time in Eclipse and Vim on a daily basis. But, I also like to try new editors, one of which I have been following since they &hellip;" />
+  <meta name="og:url" content="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/"/>
+  <meta name="url" content="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/">
+  
+  <meta name="subject" content="clojure"/>
+  <meta name="category" content="clojure"/>
+  
+  <meta name="distribution" content="global">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/">Beauhinks.com</a>
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/archives">Archives</a></li>
+    </ul>
+    <ul class="nav" data-subscription="rss">
+      <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+      
+    </ul>
+      
+    <form class="navbar-form" action="http://google.com/search" method="get">
+      <fieldset role="search">
+        <input type="hidden" name="q" value="site:beauhinks.com" />
+        <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
+      </fieldset>
+    </form>
+      
+    
+  </div>
+</div>
+</nav>
+  <div class="wrapper_single">
+    <div class="container">
+      <article class="span8 offset2" role="article">
+        <div class="article-format">
+
+  <header>
+    
+      <h1 class="entry-title">Getting Started With LightTable 0.3.x</h1>
+    
+    
+      <p class="meta">
+        
+  
+
+
+  
+    <span class="byline author vcard">by <a href="https://plus.google.com/102294742473396144410?rel=author"><span class="fn">Steven Turner</span></a></span>
+  
+
+ - 
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T13:17:00-07:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time> - 
+        
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/clojure/'>clojure</a>
+  
+</span>
+
+
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a> I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
+
+<!-- more -->
+
+
+<p>Chris Granger gives an excellent summary of the features and how to exercise them in the latest release <a href="http://www.chris-granger.com/2013/02/27/light-table-030-experience/">here</a>.</p>
+
+<p>To get started with LightTable download the version for your platform at: [http://www.lighttable.com/] For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.</p>
+
+<p>Once installed, launch LightTable and as of version 0.3.x you should be greeted with the following:
+<img src="/images/posts/LightTable-3.png" alt="sample" /></p>
+
+<p>On the left you&#8217;ll see some navigation bars. I&#8217;ll go over those briefly.
+- Workspace: You can add folders and files which will be persisted between LightTable sessions here. Simply click &#8220;add folder&#8221; to add an existing Clojure project.
+- Navigate: A fuzzy finder for looking through your workspace files.
+- Clients: Shows running instances to which LightTable is connected. This may be a running Clojure REPL or your web browser via a socket.
+- Command: Summarizes all of the various commands available in the editor. I find myself refering to this constantly as I continue to learn the key bindings.</p>
+
+<p>Basics covered&#8230; lets code! We&#8217;ll get started with Clojure Koans &#8211; small programming puzzles that are a great way to pick up the language.</p>
+
+<p>I&#8217;m going to assume you have Java installed. If you don&#8217;t and are running Windows see: <a href="http://www.java.com/en/download/help/windows_manual_download.xml">Installation Instructions</a></p>
+
+<h2>Leiningen</h2>
+
+<ol>
+<li>Download <a href="https://raw.github.com/technomancy/leiningen/stable/bin/lein">Leiningen</a></li>
+<li>Put the downloaded script somewhere on your path. ~/bin is suggested by the documentation.</li>
+<li>Make it executable with</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chmod 755 ~/bin/lein</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you need more help installing visit the <a href="http://leiningen.org/#install">Leiningen docs</a> and more specifically if you&#8217;re running Windows refer to those instructions. Leiningen relies on wget (a command line downloader). You can get wget from <a href="https://github.com/bmatzelle/gow/wiki">GOW</a></p>
+
+<h2>Clojure Koans</h2>
+
+<p>Get the puzzles either with Git via:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/functional-koans/clojure-koans.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Or prior to Github shutting down the downloads feature this month <a href="https://github.com/functional-koans/clojure-koans/downloads">here</a>.</p>
+
+<p>Navigate to the directory and hopefully if everything above went swimmingly you should be able to execute:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>lein deps
+</span><span class='line'>lein koan run</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If all went well, you should see:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>➜  clojure-koans git:(master) ✗ lein koan run
+</span><span class='line'>Starting auto-runner...
+</span><span class='line'>Considering /Users/steve/Code/git/clojure-koans/src/koans/01_equalities.clj...
+</span><span class='line'>
+</span><span class='line'>Now meditate upon /Users/steve/Code/git/clojure-koans/src/koans/01_equalities.clj:3
+</span><span class='line'>---------------------
+</span><span class='line'>Assertion failed!
+</span><span class='line'>We shall contemplate truth by testing reality, via equality
+</span><span class='line'>(= __ true)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Clojure Koan puzzle is telling you what file you need to edit to proceed to the next text in the output.</p>
+
+<h2>LightTable</h2>
+
+<p>Switch back to LightTable and click the &#8220;Workspace&#8221; tab and &#8220;Add Folder&#8221;</p>
+
+<p><img src="/images/posts/Screenshot_3_10_13_10_38_PM.png" alt="workspace" /></p>
+
+<p>Navigate to the directory you checked out the &#8220;clojure-koans&#8221; repository to on your local machine.</p>
+
+<p><img src="/images/posts/Screenshot_3_10_13_10_39_PM-2.png" alt="project" /></p>
+
+<p>I like to snap LightTable and iTerm to the left and right of my display while working through the puzzles. In OSX you can do this with <a href="https://github.com/fikovnik/ShiftIt">Shiftit</a>.</p>
+
+<p><img src="/images/posts/Fullscreen_3_10_13_10_43_PM-2.png" alt="snapped" /></p>
+
+<p>This way I can work through each step in the puzzle and see that the test passed successfully on the console at the right side of my display.</p>
+
+<p>Start trying to solve the puzzles! If you really get stuck, the LightTable &#8220;Instarepl&#8221; is invaluable. To launch it, select the &#8220;Command&#8221; tab and start typing &#8220;inst&#8221; in the search bar. Select &#8220;Open a clojure instarepl&#8221; to launch a new tab with a running REPL.</p>
+
+<p><img src="/images/posts/LightTable-2.png" alt="repl-launch" /></p>
+
+<p>You can then use the new Instarepl tab to help reason out your answers and see the results immediately. For example, the first few puzzles&#8230;
+<img src="/images/posts/Screenshot_3_10_13_10_58_PM.png" alt="repl-error" />
+Take note that I&#8217;m in the Instarepl tab. You can also toggle &#8220;live&#8221; evaluation by selecting the &#8220;live&#8221; button in the top right corner.
+Finally, as you type the puzzles in to reason about them, you&#8217;ll see results immediately. In the above screenshot, I have not solved the puzzle yet, hence the error! As soon as I satisfy the expression&#8230;
+<img src="/images/posts/Screenshot_3_10_13_11_02_PM.png" alt="repl-success" />
+Success! But wait, my &#8220;koan&#8221; terminal on the right of display hasn&#8217;t passed yet. I can then copy my solution from the Instarepl, insert it into the koan file and save to pass the koan! At first this may not seem useful, but as you progress through the more advanced koans, the REPL will greatly help you figure out Clojure forms and how to solve the problems.
+Happy REPL&#8217;ing.</p>
+
+<h2>Questions?</h2>
+
+<p>Feel free to post questions in the comments and I&#8217;ll try to answer them. By far this is not a complete guide to getting running. Hopefully it consolidates a lot of resources around the web on Clojure and Light Table to get you started.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+
+  
+    <span class="byline author vcard">by <a href="https://plus.google.com/102294742473396144410?rel=author"><span class="fn">Steven Turner</span></a></span>
+  
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-09T13:17:00-07:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+      
+
+posted in
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/clojure/'>clojure</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/" data-via="stevefturner" data-counturl="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    
+      <a class="pull-left" href="/blog/2013/03/09/migrating-from-tumblr-to-octopress/" title="Previous Post: Migrating from Tumblr to Octopress">&laquo; Migrating from Tumblr to Octopress</a>
+    
+    
+  </footer>
+
+</div>
+
+        
+          <div class="article-format">
+            <h1>Comments</h1>
+            <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+          </div>
+        
+      </article>
+    </div>
+  </div>
+  <div id="footer-widgets">
+  <div class="container">
+    <div class="row">
+  <div class="span3">
+    <h2>recent posts</h2>
+    <ul class="recent_posts">
+      
+        <li>
+          <a href="/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/">Getting Started with LightTable 0.3.x</a>
+        </li>
+      
+        <li>
+          <a href="/blog/2013/03/09/migrating-from-tumblr-to-octopress/">Migrating from Tumblr to Octopress</a>
+        </li>
+      
+        <li>
+          <a href="/blog/2013/03/09/playing-with-overtone-and-dubstep/">Playing with Overtone and Dubstep</a>
+        </li>
+      
+        <li>
+          <a href="/blog/2013/03/09/simple-url-shortener-with-clojure/">Simple URL Shortener with Clojure</a>
+        </li>
+      
+    </ul>
+    <h2><a href="/blog/archives">archives</a></h2>
+  </div>
+  <div class="span3">
+    
+
+  </div>
+  <div class="span4">
+    
+<h2>twitter</h2>
+<a href="https://twitter.com/stevefturner" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @stevefturner</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="tweet" data-twitter-user="stevefturner">
+</div>
+
+
+  </div>
+  <div class="span2">
+    <h2>found on</h2>
+
+<a href="https://github.com/steveturner/" rel="tooltip" title="Github"><img class="social_icon" title="Github" alt="github icon" src="/images/glyphicons_381_github.png"></a>
+
+
+
+<a href="http://stackoverflow.com/users/430972/" rel="tooltip" title="Stack Overflow"><img class="social_icon" title="Stack Overflow" alt="stack overflow icon" src="/images/glyphicons_400_stack_overflow.png"></a>
+
+
+
+<a href="http://www.linkedin.com/in/steventurner0" rel="tooltip" title="Linkedin"><img class="social_icon" title="Linkedin" alt="Linkedin icon" src="/images/glyphicons_377_linked_in.png"></a>
+
+
+
+<a href="http://twitter.com/stevefturner" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="/images/glyphicons_391_twitter_t.png"></a>
+
+
+
+<a href="https://plus.google.com/102294742473396144410?rel=author" rel="tooltip" title="Google Plus"><img class="social_icon" title="Google Plus" alt="Google Plus icon" src="/images/glyphicons_386_google_plus.png"></a>
+
+
+
+
+
+<h2>contact at</h2>
+<a href="mailto:whathasnotbeenuse@gmail.com">whathasnotbeenuse@gmail.com</a>
+
+
+  </div>
+</div>
+
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-left">
+  <a href="/">Beauhinks.com</a>
+  - Copyright &copy; 2013 - Steven Turner
+</p>
+<p class="pull-right">
+  <span>"Things may come to those who wait, but only the things left by those who hustle."</span>
+  
+</p>
+
+  </div>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript"><\/script>')</script>
+<script src="/javascripts/libs/bootstrap.min.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.instagram.js" type="text/javascript"></script>
+<script src="/javascripts/libs/jquery.masonry.min.js" type="text/javascript"></script>
+<script src="/javascripts/custom.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'beauhinks';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/';
+        var disqus_url = 'http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>
