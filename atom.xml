@@ -4,11 +4,11 @@
   <title><![CDATA[Beauhinks.com]]></title>
   <link href="http://beauhinks.com/atom.xml" rel="self"/>
   <link href="http://beauhinks.com/"/>
-  <updated>2013-03-10T23:14:16-06:00</updated>
+  <updated>2013-03-14T09:21:55-06:00</updated>
   <id>http://beauhinks.com/</id>
   <author>
     <name><![CDATA[Steven Turner]]></name>
-    <email><![CDATA[whathasnotbeenuse@gmail.com]]></email>
+    <email><![CDATA[whathasnotbeenused@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
@@ -18,10 +18,12 @@
     <link href="http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x/"/>
     <updated>2013-03-09T13:17:00-07:00</updated>
     <id>http://beauhinks.com/blog/2013/03/09/getting-started-with-lighttable-0-dot-3-x</id>
-    <content type="html"><![CDATA[<p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a>. I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
+    <content type="html"><![CDATA[<p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a>.</p>
 
 <!-- more -->
 
+
+<p>I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
 
 <p>Chris Granger gives an excellent summary of the features and how to exercise them in the latest release <a href="http://www.chris-granger.com/2013/02/27/light-table-030-experience/">here</a>.</p>
 
@@ -165,7 +167,10 @@ For archives visit:
     <link href="http://beauhinks.com/blog/2013/03/09/simple-url-shortener-with-clojure/"/>
     <updated>2013-03-09T12:25:00-07:00</updated>
     <id>http://beauhinks.com/blog/2013/03/09/simple-url-shortener-with-clojure</id>
-    <content type="html"><![CDATA[<p>Tinkering more with Clojure and web services.</p>
+    <content type="html"><![CDATA[<p>Tinkering more with Clojure and basic web services.</p>
+
+<!-- more -->
+
 
 <p>Here’s the entire application code:</p>
 
@@ -228,9 +233,6 @@ For archives visit:
 </span></code></pre></td></tr></table></div></figure>
 
 
-<!-- more -->
-
-
 <p>Fire up the app with</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -253,7 +255,7 @@ For archives visit:
 
 <p>Try some of the keys…</p>
 
-<p>Fairly incredible how little code there is to perform a redirect and handle routes. Thanks to this video.</p>
+<p>Fairly incredible how little code there is to perform a redirect and handle routes. <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=VVd4ow-ZcX0#!">Thanks to this video!</a></p>
 ]]></content>
   </entry>
   

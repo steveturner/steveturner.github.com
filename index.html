@@ -101,7 +101,7 @@
 
 
 <h2>contact at</h2>
-<a href="mailto:whathasnotbeenuse@gmail.com">whathasnotbeenuse@gmail.com</a>
+<a href="mailto:whathasnotbeenused@gmail.com">whathasnotbeenused@gmail.com</a>
 
 
   </div>
@@ -161,7 +161,7 @@ posted in
   </header>
 
 
-  <div class="entry-content"><p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a>. I&#8217;m also new to Clojure so I&#8217;ve dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.</p>
+  <div class="entry-content"><p>I spend a lot of time in Eclipse and <a href="http://vim.spf13.com/">Vim</a>  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign&#8230; <a href="http://www.lighttable.com/">LightTable</a>.</p>
 
 </div>
   
@@ -347,68 +347,7 @@ posted in
   </header>
 
 
-  <div class="entry-content"><p>Tinkering more with Clojure and web services.</p>
-
-<p>Here’s the entire application code:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">ns </span><span class="nv">startingclojure.app</span>
-</span><span class='line'>  <span class="p">(</span><span class="ss">:use</span> <span class="p">[</span><span class="nv">clojure.pprint</span><span class="p">]</span> <span class="p">[</span><span class="nv">compojure.core</span><span class="p">]</span> <span class="p">)</span>
-</span><span class='line'>  <span class="p">(</span><span class="ss">:require</span>
-</span><span class='line'>    <span class="p">[</span><span class="nv">ring.adapter.jetty</span> <span class="ss">:as</span> <span class="nv">jetty</span><span class="p">]</span>
-</span><span class='line'>    <span class="p">[</span><span class="nv">ring.util.response</span> <span class="ss">:as</span> <span class="nv">response</span><span class="p">]</span>
-</span><span class='line'>    <span class="p">))</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">(</span><span class="kd">defonce </span><span class="nv">counter</span> <span class="p">(</span><span class="nf">atom</span> <span class="mi">999</span><span class="p">))</span>
-</span><span class='line'><span class="p">(</span><span class="kd">defonce </span><span class="nv">urls</span> <span class="p">(</span><span class="nf">atom</span> <span class="p">{}))</span>
-</span><span class='line'><span class="p">(</span><span class="kd">defn </span><span class="nv">shorten</span>
-</span><span class='line'>  <span class="p">[</span><span class="nv">url</span><span class="p">]</span>
-</span><span class='line'>  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">id</span> <span class="p">(</span><span class="nf">swap!</span> <span class="nv">counter</span> <span class="nv">inc</span><span class="p">)</span>
-</span><span class='line'>        <span class="nv">id</span> <span class="p">(</span><span class="nf">Long/toString</span> <span class="nv">id</span> <span class="mi">36</span><span class="p">)]</span>
-</span><span class='line'>    <span class="p">(</span><span class="nf">swap!</span> <span class="nv">urls</span> <span class="nb">assoc </span><span class="nv">id</span> <span class="nv">url</span><span class="p">)</span>
-</span><span class='line'>    <span class="nv">id</span><span class="p">))</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="p">(</span><span class="kd">defn </span><span class="nv">homepage</span>
-</span><span class='line'>  <span class="p">[</span><span class="nv">request</span><span class="p">]</span>
-</span><span class='line'>  <span class="p">(</span><span class="nb">str </span><span class="err">@</span><span class="nv">urls</span><span class="p">))</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">(</span><span class="kd">defn </span><span class="nv">redirect</span>
-</span><span class='line'>  <span class="p">[</span><span class="nv">id</span><span class="p">]</span>
-</span><span class='line'>  <span class="p">(</span><span class="nf">response/redirect</span> <span class="p">(</span><span class="err">@</span><span class="nv">urls</span> <span class="nv">id</span><span class="p">)))</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">(</span><span class="nf">defroutes</span> <span class="nv">app</span>
-</span><span class='line'>  <span class="p">(</span><span class="nf">GET</span> <span class="s">&quot;/&quot;</span> <span class="nv">request</span> <span class="p">(</span><span class="nf">homepage</span> <span class="nv">request</span><span class="p">))</span>
-</span><span class='line'>  <span class="p">(</span><span class="nf">GET</span> <span class="s">&quot;/:id&quot;</span> <span class="p">[</span><span class="nv">id</span><span class="p">]</span> <span class="p">(</span><span class="nf">redirect</span> <span class="nv">id</span><span class="p">)))</span>
-</span></code></pre></td></tr></table></div></figure>
-
+  <div class="entry-content"><p>Tinkering more with Clojure and basic web services.</p>
 
 </div>
   
@@ -500,7 +439,7 @@ posted in
 
 
 <h2>contact at</h2>
-<a href="mailto:whathasnotbeenuse@gmail.com">whathasnotbeenuse@gmail.com</a>
+<a href="mailto:whathasnotbeenused@gmail.com">whathasnotbeenused@gmail.com</a>
 
 
   </div>
@@ -516,7 +455,6 @@ posted in
 </p>
 <p class="pull-right">
   <span>"Things may come to those who wait, but only the things left by those who hustle."</span>
-  
 </p>
 
   </div>
