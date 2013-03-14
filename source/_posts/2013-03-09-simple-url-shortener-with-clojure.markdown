@@ -7,8 +7,8 @@ categories: clojure
 ---
 
 
-Tinkering more with Clojure and web services.
-
+Tinkering more with Clojure and basic web services.
+<!-- more -->
 Here’s the entire application code:
 
 ``` clojure
@@ -41,7 +41,7 @@ Here’s the entire application code:
   (GET "/" request (homepage request))
   (GET "/:id" [id] (redirect id)))
 ```
-<!-- more -->
+
 Fire up the app with
 ``` clojure
 (def server (jetty/run-jetty #’app {:port 8080 :join? false}))

@@ -6,9 +6,11 @@ comments: true
 categories: clojure
 ---
 
-I spend a lot of time in Eclipse and [Vim](http://vim.spf13.com/)  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign... [LightTable](http://www.lighttable.com/). I'm also new to Clojure so I've dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.
-
+I spend a lot of time in Eclipse and [Vim](http://vim.spf13.com/)  on a daily basis. But, I also like to try new editors, one of which I have been following since they started their Kickstarter campaign... [LightTable](http://www.lighttable.com/).
 <!-- more -->
+I'm also new to Clojure so I've dabbled with various setups of Counter-clockwise, emacs, and vim for Clojure development.
+
+
 Chris Granger gives an excellent summary of the features and how to exercise them in the latest release [here](http://www.chris-granger.com/2013/02/27/light-table-030-experience/).
 
 To get started with LightTable download the version for your platform at: [LightTable.com](http://www.lighttable.com/). For OSX, the install process was smooth but I have read that for Windows you might encounter a few nits getting running.
