@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Scala | Beauhinks.com]]></title>
+  <link href="http://beauhinks.com/blog/categories/scala/atom.xml" rel="self"/>
+  <link href="http://beauhinks.com/"/>
+  <updated>2013-05-01T16:46:25-06:00</updated>
+  <id>http://beauhinks.com/</id>
+  <author>
+    <name><![CDATA[Steven Turner]]></name>
+    <email><![CDATA[whathasnotbeenused@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SBT Multi-Project Basics]]></title>
+    <link href="http://beauhinks.com/blog/2013/05/01/sbt-multi-project-basics/"/>
+    <updated>2013-05-01T20:36:00-06:00</updated>
+    <id>http://beauhinks.com/blog/2013/05/01/sbt-multi-project-basics</id>
+    <content type="html"><![CDATA[<p>I've grown very fond of <a href="https://github.com/technomancy/leiningen">lieningen</a> for managing dependencies and builds with Java and Clojure projects.
+However, I'm currently working with some projects that rely on SBT for their build system.. namely the <a href="http://www.playframework.com/">Play! Framework</a>.</p>
+
+<!-- more -->
+
+
+<p>The project I'm working with is a vanilla Play! build with a number of submodules to break out functionality into reusable submodules. Let's get started with Play! as an example since it bundles <a href="http://www.scala-sbt.org/">SBT</a></p>
+]]></content>
+  </entry>
+  
+</feed>
